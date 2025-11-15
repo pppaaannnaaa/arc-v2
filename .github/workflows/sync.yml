@@ -37,4 +37,4 @@ jobs:
           git config user.email "sync@arc.com"
           git add --all
           git commit -m "Auto-sync from arc-v2" || echo "No changes"
-          git push origin master
+          git push origin main
