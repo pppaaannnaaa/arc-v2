@@ -8,8 +8,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   build-deploy:
@@ -20,15 +18,14 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.x
+          python-version: '3.x'
 
-      - name: Install MkDocs
+      - name: Install MkDocs and dependencies
         run: |
           pip install mkdocs-material
           pip install pymdown-extensions
-          pip install mkdocs-literate-nav
 
-      - name: Build and Deploy
+      - name: Build and Deploy to gh-pages
         run: mkdocs gh-deploy --force
