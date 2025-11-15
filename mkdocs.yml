@@ -57,18 +57,22 @@ nav:
 
 plugins:
   - search
-  - autoreload
 
 markdown_extensions:
   - admonition
   - footnotes
   - toc:
       permalink: true
+  - attr_list
+  - def_list
+  - tables
+  - abbr
+  - meta
   - pymdownx.superfences
-  - pymdownx.codehilite
   - pymdownx.details
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.magiclink
   - pymdownx.snippets
   - pymdownx.highlight
+  - pymdownx.inlinehilite
