@@ -1,0 +1,37 @@
+name: Sync Repo A → Repo B
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo A
+        uses: actions/checkout@v4
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+      - name: Clone Repo B (via SSH)
+        run: |
+          git clone git@github.com:aifluent-in/arc.git repo_b
+
+      - name: Sync Files
+        run: |
+          rsync -av --delete --exclude '.git' ./ repo_b/
+
+      - name: Commit & Push
+        run: |
+          cd repo_b
+          git config user.name "ARC Sync Bot"
+          git config user.email "sync@arc.com"
+          git add --all
+          git commit -m "Auto-sync from arc-v2" || echo "No changes"
+          git push origin main
