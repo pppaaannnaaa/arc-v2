@@ -9,6 +9,9 @@ jobs:
   sync:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+
     steps:
       - name: Checkout Repo A
         uses: actions/checkout@v4
@@ -22,17 +25,17 @@ jobs:
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan github.com >> ~/.ssh/known_hosts
 
-      - name: Test SSH connection
-        run: |
-          ssh -T git@github.com || true
-
       - name: Clone Repo B
         run: |
           git clone git@github.com:aifluent-in/arc.git repo_b
 
-      - name: Sync files
+      - name: Sync files from Repo A → Repo B
         run: |
-          rsync -av --delete --exclude '.git' ./ repo_b/ || [ $? -eq 24 ]
+          rsync -av --delete \
+            --exclude '.git' \
+            --exclude '.github' \
+            --exclude 'repo_b' \
+            ./ repo_b/ || [ $? -eq 24 ]
 
       - name: Commit and Push to Repo B
         run: |
@@ -40,5 +43,5 @@ jobs:
           git config user.name "ARC Sync Bot"
           git config user.email "sync@arc.com"
           git add --all
-          git commit -m "Auto-sync from arc-v2 main" || echo "No changes"
+          git commit -m "Auto-sync from arc-v2 main" || echo "No changes to commit"
           git push origin main
