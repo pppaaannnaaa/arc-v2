@@ -1,4 +1,4 @@
-## 5. The Search for a Universal Fix (Expanded Edition)
+## 5. The Search for a Universal Fix 
 
 ### 5.1 Overview
 As the web grew more complex, developers, search engines, and AI systems found themselves operating

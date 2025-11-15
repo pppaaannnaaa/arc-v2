@@ -1,5 +1,5 @@
 # AI READABILITY CONVENTION (ARC)
-# Version 2.1 — Phase 1 (Intro & History, Expanded Edition)
+# Version 2.1 — Phase 1 (Intro)
 
 **title:** AI Readability Convention (ARC) 2.1 — Expanded Phase 1  
 **author:** Panna Das  

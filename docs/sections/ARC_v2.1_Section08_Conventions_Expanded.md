@@ -1,5 +1,5 @@
 
-## 8. Conventions of ARC (Expanded Edition)
+## 8. Conventions of ARC 
 
 ### 8.1 Overview
 The AI Readability Convention (ARC) establishes a consistent, predictable, and extensible semantic layer

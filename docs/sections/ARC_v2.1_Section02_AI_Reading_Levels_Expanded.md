@@ -1,4 +1,4 @@
-## 2. How AIs Read the Web — The Three Levels of Understanding (Expanded Edition)
+## 2. How AIs Read the Web — The Three Levels of Understanding 
 
 ### 2.1 Overview
 Artificial Intelligence systems—including search crawlers, LLMs, ranking algorithms, accessibility agents, and knowledge graph builders—attempt to extract *meaning* from HTML. However, without explicit guidance, their understanding remains inconsistent.

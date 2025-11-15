@@ -1,4 +1,4 @@
-## 9.2 Content Attributes (Expanded Edition)
+## 9.2 Content Attributes 
 
 ### 9.2.1 Overview
 Content attributes form the expressive core of ARC’s semantic model. While structural attributes define

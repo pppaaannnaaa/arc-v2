@@ -1,4 +1,4 @@
-## 6. Introducing the ARC System (`data-ai-*`) — Expanded Edition
+## 6. Introducing the ARC System (`data-ai-*`)
 
 ### 6.1 Overview
 The **AI Readability Convention (ARC)** introduces a unified, declarative, and highly modular system

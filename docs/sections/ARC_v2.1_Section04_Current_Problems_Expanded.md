@@ -1,4 +1,4 @@
-## 4. Problems with the Current Scenario (Expanded Edition)
+## 4. Problems with the Current Scenario 
 
 ### 4.1 Overview
 The modern web has evolved into a highly dynamic, component‑driven ecosystem. Frameworks, build tools, headless CMSs, and real‑time APIs have made development extremely efficient—but this same efficiency has created a semantic vacuum. As visual complexity increases, machine‑level interpretability decreases.

@@ -1,4 +1,4 @@
-## 9.4 Relational Attributes (Expanded Edition)
+## 9.4 Relational Attributes 
 
 ### 9.4.1 Overview
 Relational attributes in ARC establish **connections, references, and dependencies** between elements,
@@ -6,7 +6,7 @@ allowing AI systems to interpret not only *what* elements exist but *how those e
 While structural attributes map hierarchy and content attributes describe meaning, relational attributes
 bind the interface together into an entity–relationship model that an AI can traverse deterministically.
 
-This expanded edition clarifies relational models, provides deeper examples, and strengthens tone and clarity.
+This module clarifies relational models, provides deeper examples, and strengthens tone and clarity.
 
 ---
 

@@ -1,4 +1,4 @@
-# Appendices A–C (Expanded Edition)
+# Appendices A–C 
 
 ## Appendix A — Glossary of Terms (Expanded)
 
@@ -206,4 +206,4 @@ ARC validation becomes part of the culture of semantic consistency.
 
 ---
 
-*End of Phase 17‑A — Appendices A–C (Expanded Edition)*
+*End of Phase 17‑A — Appendices A–C *

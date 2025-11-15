@@ -1,4 +1,4 @@
-## 9.1 Structural Attributes (Expanded Edition)
+## 9.1 Structural Attributes 
 
 ### 9.1.1 Overview
 Structural attributes form the backbone of ARC’s semantic architecture. They define how the different

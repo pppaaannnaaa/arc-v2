@@ -1,4 +1,4 @@
-## 7. Dual Reading Modes — Structural and Narrative (Expanded Edition)
+## 7. Dual Reading Modes — Structural and Narrative 
 
 ### 7.1 Overview
 ARC introduces a dual‑mode interpretation system designed to give AI models two complementary pathways

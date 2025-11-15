@@ -1,4 +1,4 @@
-## 10. Integration Across Platforms (Expanded Edition)
+## 10. Integration Across Platforms 
 
 ### 10.1 Overview
 ARC is intentionally designed to be platform‑agnostic, allowing it to operate consistently across static sites,

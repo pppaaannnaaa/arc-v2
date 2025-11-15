@@ -1,9 +1,9 @@
 
-# Appendix D — Official ARC 2.1 JSON Schema & Attribute Reference (Expanded Edition)
+# Appendix D — Official ARC 2.1 JSON Schema & Attribute Reference 
 
 ## D.1 Overview
 Appendix D provides the authoritative JSON Schema for ARC 2.1 and the complete reference for all
-`data-ai-*` attributes. This expanded edition includes full explanations, attribute rationales, schema
+`data-ai-*` attributes. This includes full explanations, attribute rationales, schema
 structure, and implementation notes. All content has been reviewed, improved, and expanded by 50–70%.
 
 ---
@@ -229,4 +229,4 @@ except ValidationError as e:
 
 ---
 
-*End of Appendix D (Expanded Edition)*
+*End of Appendix D *

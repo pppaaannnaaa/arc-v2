@@ -1,4 +1,4 @@
-## 9.5 Contextual Attributes (Expanded Edition)
+## 9.5 Contextual Attributes 
 
 ### 9.5.1 Overview
 Contextual attributes in ARC supply the missing layer of *why* behind UI elements.  

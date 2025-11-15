@@ -1,0 +1,74 @@
+site_name: ARC v2.1 Documentation
+site_description: AI Readability Convention Specification
+site_author: Panna Das
+site_url: https://aifluent-in.github.io/arc
+
+repo_name: aifluent-in/arc
+repo_url: https://github.com/aifluent-in/arc
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: teal
+    - scheme: slate
+      primary: indigo
+      accent: teal
+  features:
+    - navigation.expand
+    - navigation.sections
+    - navigation.instant
+    - navigation.indexes
+    - content.code.copy
+    - content.tabs.link
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+
+  - Sections:
+      - Section 01 — Introduction: sections/ARC_v2.1_Section01_Introduction_Expanded.md
+      - Section 02 — AI Reading Levels: sections/ARC_v2.1_Section02_AI_Reading_Levels_Expanded.md
+      - Section 03 — Existing Options: sections/ARC_v2.1_Section03_Existing_Options_Expanded.md
+      - Section 04 — Current Problems: sections/ARC_v2.1_Section04_Current_Problems_Expanded.md
+      - Section 05 — Universal Fix: sections/ARC_v2.1_Section05_Universal_Fix_Expanded.md
+      - Section 06 — Introducing ARC: sections/ARC_v2.1_Section06_Introducing_ARC_Expanded.md
+      - Section 07 — Dual Modes: sections/ARC_v2.1_Section07_Dual_Modes_Expanded.md
+      - Section 08 — Conventions: sections/ARC_v2.1_Section08_Conventions_Expanded.md
+      - Section 09 — Structural Attributes: sections/ARC_v2.1_Section09_Structural_Attributes_Expanded.md
+      - Section 10 — Content Attributes: sections/ARC_v2.1_Section10_Content_Attributes_Expanded.md
+      - Section 11 — Meta Attributes: sections/ARC_v2.1_Section11_Meta_Attributes_Expanded.md
+      - Section 12 — Relational Attributes: sections/ARC_v2.1_Section12_Relational_Attributes_Expanded.md
+      - Section 13 — Contextual Attributes: sections/ARC_v2.1_Section13_Contextual_Attributes_Expanded.md
+      - Section 14 — Dynamic Attributes: sections/ARC_v2.1_Section14_Dynamic_Attributes_Expanded.md
+      - Section 15 — Comprehensive Examples: sections/ARC_v2.1_Section15_Comprehensive_Example_Expanded.md
+      - Section 16 — Integration & Conclusion: sections/ARC_v2.1_Section16_Integration_and_Conclusion_Expanded.md
+
+  - Appendices:
+      - Appendix A–C (Glossary, Best Practices, Validation): appendices/ARC_v2.1_Appendix_A_to_C_Expanded.md
+      - Appendix D — JSON Schema: appendices/ARC_v2.1_Appendix_D_JSON_Schema_Expanded.md
+      - Appendix E — Sitemap & Indexing: appendices/ARC_v2.1_Appendix_E_Sitemap_Indexing_Expanded.md
+
+  - Schemas:
+      - ARC v2.1 JSON Schema: schemas/arc-schema-v2.1.json
+
+plugins:
+  - search
+  - autoreload
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.codehilite
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.magiclink
+  - pymdownx.snippets
+  - pymdownx.highlight

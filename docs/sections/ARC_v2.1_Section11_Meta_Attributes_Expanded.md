@@ -1,4 +1,4 @@
-## 9.3 Meta Attributes (Expanded Edition)
+## 9.3 Meta Attributes 
 
 ### 9.3.1 Overview
 Meta attributes provide the deeper descriptive layers of ARC’s semantic system.  

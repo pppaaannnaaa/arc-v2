@@ -1,4 +1,4 @@
-## 9.7 Comprehensive Multi‑Part Example (Expanded Edition)
+## 9.7 Comprehensive Multi‑Part Example 
 
 ### 9.7.1 Overview
 This expanded final section demonstrates how **all ARC attribute families**—structural, content, meta, relational, contextual, and dynamic—work together in realistic, multi‑component environments.  

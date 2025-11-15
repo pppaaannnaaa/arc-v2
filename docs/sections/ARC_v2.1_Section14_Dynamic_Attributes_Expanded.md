@@ -1,4 +1,4 @@
-## 9.6 Dynamic Attributes (Expanded Edition)
+## 9.6 Dynamic Attributes 
 
 ### 9.6.1 Overview
 Dynamic attributes in ARC describe **real-time interaction, system behavior, and state transitions** inside web applications.
