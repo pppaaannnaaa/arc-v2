@@ -15,7 +15,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      # Decode the SSH key that was stored as base64
       - name: Set up SSH
         run: |
           mkdir -p ~/.ssh
@@ -23,22 +22,18 @@ jobs:
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan github.com >> ~/.ssh/known_hosts
 
-      # Debug: Try SSH connection
       - name: Test SSH connection
         run: |
           ssh -T git@github.com || true
 
-      # Clone Repo B (destination)
       - name: Clone Repo B
         run: |
           git clone git@github.com:aifluent-in/arc.git repo_b
 
-      # Sync files from Repo A → Repo B
       - name: Sync files
         run: |
-          rsync -av --delete --exclude '.git' ./ repo_b/
+          rsync -av --delete --exclude '.git' ./ repo_b/ || [ $? -eq 24 ]
 
-      # Commit and push to Repo B main branch
       - name: Commit and Push to Repo B
         run: |
           cd repo_b
