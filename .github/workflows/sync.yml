@@ -17,11 +17,14 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
+          ssh-keygen -p -m PEM -N "" -f ~/.ssh/id_ed25519 || true
           ssh-keyscan github.com >> ~/.ssh/known_hosts
 
-      - name: Clone Repo B (via SSH)
-        run: |
-          git clone git@github.com:aifluent-in/arc.git repo_b
+      - name: Test SSH connection
+        run: ssh -T git@github.com || true
+
+      - name: Clone Repo B
+        run: git clone git@github.com:aifluent-in/arc.git repo_b
 
       - name: Sync Files
         run: |
@@ -34,4 +37,4 @@ jobs:
           git config user.email "sync@arc.com"
           git add --all
           git commit -m "Auto-sync from arc-v2" || echo "No changes"
-          git push origin main
+          git push origin master
