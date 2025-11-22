@@ -1,0 +1,1586 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AI Readability Convention Specification">
+      
+      
+        <meta name="author" content="Panna Das">
+      
+      
+        <link rel="canonical" href="https://aifluent-in.github.io/arc/sections/ARC_v2.1_Section03_Existing_Options_Expanded/">
+      
+      
+        <link rel="prev" href="../ARC_v2.1_Section02_AI_Reading_Levels_Expanded/">
+      
+      
+        <link rel="next" href="../ARC_v2.1_Section04_Current_Problems_Expanded/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Section 03 — Existing Options - ARC v2.1 Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#3-existing-options-for-ai-readability" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ARC v2.1 Documentation" class="md-header__button md-logo" aria-label="ARC v2.1 Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ARC v2.1 Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Section 03 — Existing Options
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/aifluent-in/arc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    aifluent-in/arc
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ARC v2.1 Documentation" class="md-nav__button md-logo" aria-label="ARC v2.1 Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ARC v2.1 Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/aifluent-in/arc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    aifluent-in/arc
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sections
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sections
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARC_v2.1_Section01_Introduction_Expanded/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 01 — Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARC_v2.1_Section02_AI_Reading_Levels_Expanded/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 02 — AI Reading Levels
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 03 — Existing Options
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 03 — Existing Options
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#3-existing-options-for-ai-readability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Existing Options for AI Readability
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Existing Options for AI Readability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Overview
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-semantic-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Semantic HTML
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-schemaorg-json-ld" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Schema.org / JSON-LD
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-opengraph-og" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 OpenGraph (OG)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-microdata-and-rdfa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Microdata and RDFa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-headless-cms-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 Headless CMS / APIs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-ai-crawlers-and-llm-readers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7 AI Crawlers and LLM Readers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-summary-of-existing-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.8 Summary of Existing Methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARC_v2.1_Section04_Current_Problems_Expanded/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 04 — Current Problems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARC_v2.1_Section05_Universal_Fix_Expanded/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 05 — Universal Fix
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARC_v2.1_Section06_Introducing_ARC_Expanded/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 06 — Introducing ARC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARC_v2.1_Section07_Dual_Modes_Expanded/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 07 — Dual Modes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARC_v2.1_Section08_Conventions_Expanded/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 08 — Conventions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARC_v2.1_Section09_Structural_Attributes_Expanded/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 09 — Structural Attributes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARC_v2.1_Section10_Content_Attributes_Expanded/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 10 — Content Attributes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARC_v2.1_Section11_Meta_Attributes_Expanded/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 11 — Meta Attributes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARC_v2.1_Section12_Relational_Attributes_Expanded/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 12 — Relational Attributes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARC_v2.1_Section13_Contextual_Attributes_Expanded/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 13 — Contextual Attributes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARC_v2.1_Section14_Dynamic_Attributes_Expanded/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 14 — Dynamic Attributes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARC_v2.1_Section15_Comprehensive_Example_Expanded/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 15 — Comprehensive Examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARC_v2.1_Section16_Integration_and_Conclusion_Expanded/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 16 — Integration & Conclusion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Appendices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendices/ARC_v2.1_Appendix_A_to_C_Expanded/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix A–C (Glossary, Best Practices, Validation)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendices/ARC_v2.1_Appendix_D_JSON_Schema_Expanded/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix D — JSON Schema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendices/ARC_v2.1_Appendix_E_Sitemap_Indexing_Expanded/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix E — Sitemap & Indexing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schemas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Schemas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schemas/arc-schema-v2.1.json" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ARC v2.1 JSON Schema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#3-existing-options-for-ai-readability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Existing Options for AI Readability
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Existing Options for AI Readability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Overview
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-semantic-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Semantic HTML
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-schemaorg-json-ld" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Schema.org / JSON-LD
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-opengraph-og" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 OpenGraph (OG)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-microdata-and-rdfa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Microdata and RDFa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-headless-cms-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 Headless CMS / APIs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-ai-crawlers-and-llm-readers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7 AI Crawlers and LLM Readers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-summary-of-existing-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.8 Summary of Existing Methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Section 03 — Existing Options</h1>
+
+<h2 id="3-existing-options-for-ai-readability">3. Existing Options for AI Readability<a class="headerlink" href="#3-existing-options-for-ai-readability" title="Permanent link">&para;</a></h2>
+<h3 id="31-overview">3.1 Overview<a class="headerlink" href="#31-overview" title="Permanent link">&para;</a></h3>
+<p>Before ARC emerged as a unified readability framework, the ecosystem consisted of fragmented technologies, each attempting to solve a part of the machine comprehension problem. These methods—while beneficial in their own domains—were never designed for deep contextual understanding, intent interpretation, or inline semantic communication. As a result, AI systems often received incomplete, ambiguous, or inconsistent meaning from the same webpage.</p>
+<p>Technologies such as <strong>Semantic HTML</strong>, <strong>Schema.org</strong>, <strong>OpenGraph</strong>, <strong>Microdata</strong>, <strong>Headless CMS APIs</strong>, and modern <strong>AI Crawlers</strong> provide valuable building blocks but fail to offer a cohesive, purpose-driven semantic layer. This section explores each method, its strengths, and why ARC must exist as a more expressive alternative.</p>
+<hr />
+<h3 id="32-semantic-html">3.2 Semantic HTML<a class="headerlink" href="#32-semantic-html" title="Permanent link">&para;</a></h3>
+<p>Semantic HTML introduces elements like <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code> to give browsers, screen readers, and search engines a general sense of document structure. It improves human accessibility and offers minimal semantic cues. However, its expressiveness is limited to structural meaning rather than contextual or behavioral meaning.</p>
+<p><strong>Expanded Advantages:</strong>
+- Increases readability for both developers and accessibility tools.
+- Enhances baseline SEO by providing predictable layouts.
+- Lightweight and does not require external scripts or frameworks.
+- Acts as a foundational layer for all other semantic systems.</p>
+<p><strong>Expanded Limitations:</strong>
+- Cannot describe relationships between entities.
+- Cannot express nuance such as intent, emotional tone, or conditional meaning.
+- Lacks depth for AI reasoning—AI can see <em>what</em> is present but not <em>why</em> it is there.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Green Energy Projects<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Exploring renewable solutions for urban environments.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</code></pre></div></p>
+<p><strong>AI Output (Still Shallow):</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"> </span>
+<span class="w">  </span><span class="nt">&quot;element&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;article&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Green Energy Projects&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;summary&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Exploring renewable solutions for urban environments.&quot;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>Despite improvements, Semantic HTML remains insufficient for detailed machine-level interpretation—motivating the need for ARC.</p>
+<hr />
+<h3 id="33-schemaorg-json-ld">3.3 Schema.org / JSON-LD<a class="headerlink" href="#33-schemaorg-json-ld" title="Permanent link">&para;</a></h3>
+<p>Schema.org was introduced to standardize structured data across the web. Developers embed JSON-LD inside <code>&lt;script&gt;</code> tags, enabling search engines to classify content. It is powerful, widely supported, and ideal for descriptive metadata, especially for products, articles, events, and organizations.</p>
+<p><strong>Expanded Advantages:</strong>
+- Provides the richest yet standardized metadata vocabulary.
+- Works exceptionally well for SEO-driven systems like Google Rich Results.
+- Declarative and easy to generate programmatically from CMS backends.
+- Suitable for large-scale content platforms.</p>
+<p><strong>Expanded Limitations:</strong>
+- Removed from HTML’s visual structure, leading to synchronization problems.
+- Any UI modification can render metadata outdated.
+- Does not reflect dynamic states, user interactions, or component-level semantics.
+- AI systems must map the detached schema back to the page context—often inaccurately.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;application/ld+json&quot;</span><span class="p">&gt;</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="s2">&quot;@context&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://schema.org&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;@type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Product&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Hydroponic Tower&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;description&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;A compact hydroponic system for homes.&quot;</span>
+<span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div></p>
+<hr />
+<h3 id="34-opengraph-og">3.4 OpenGraph (OG)<a class="headerlink" href="#34-opengraph-og" title="Permanent link">&para;</a></h3>
+<p>OpenGraph is widely used for social preview cards when links are shared. It provides basic information such as title, description, and image. Although essential for social networks, it is not intended for deep semantic expression.</p>
+<p><strong>Expanded Advantages:</strong>
+- Simple, universal, and widely adopted for social media sharing.
+- Ensures consistent preview formatting across platforms.
+- Helps brands control the first impression when shared online.</p>
+<p><strong>Expanded Limitations:</strong>
+- No hierarchical semantics or multi-level meaning.
+- Limited to shallow descriptors with no contextual depth.
+- Cannot represent interactive states, relationships, or logic.
+- Not designed for AI interpretation beyond summary-level metadata.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">&quot;og:title&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;AI Readability Convention&quot;</span> <span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">&quot;og:description&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;Making web content AI-understandable.&quot;</span> <span class="p">/&gt;</span>
+</code></pre></div></p>
+<hr />
+<h3 id="35-microdata-and-rdfa">3.5 Microdata and RDFa<a class="headerlink" href="#35-microdata-and-rdfa" title="Permanent link">&para;</a></h3>
+<p>Microdata and RDFa embed metadata directly inside HTML using special attributes like <code>itemprop</code>, <code>itemscope</code>, and semantic vocabularies. This makes metadata inline but also creates bloated, noisy HTML.</p>
+<p><strong>Expanded Advantages:</strong>
+- Inline with UI structure, reducing syncing issues.
+- Highly granular—ideal for linked-data ecosystems.
+- Works without JavaScript and is easily validated.</p>
+<p><strong>Expanded Limitations:</strong>
+- Increases code complexity, especially for large pages.
+- Hard to maintain in modern component-based UI systems.
+- Limited to vocabularies defined by Schema.org.
+- Not designed for real-time AI understanding or intent-based semantics.</p>
+<p><strong>Example:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">itemscope</span> <span class="na">itemtype</span><span class="o">=</span><span class="s">&quot;https://schema.org/Product&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">itemprop</span><span class="o">=</span><span class="s">&quot;name&quot;</span><span class="p">&gt;</span>Hydroponic Tower<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div></p>
+<hr />
+<h3 id="36-headless-cms-apis">3.6 Headless CMS / APIs<a class="headerlink" href="#36-headless-cms-apis" title="Permanent link">&para;</a></h3>
+<p>Headless systems separate content from presentation. They expose structured data via APIs, enabling mobile apps, IoT systems, and other services to consume content uniformly.</p>
+<p><strong>Expanded Advantages:</strong>
+- Clean, machine-readable, and consistent across platforms.
+- Ideal for systems requiring centralized data control.
+- Easier to integrate with automation and multi-channel distribution.</p>
+<p><strong>Expanded Limitations:</strong>
+- Completely disconnected from the HTML the user sees.
+- Requires expensive development pipelines and synchronization layers.
+- Not usable for static websites or legacy systems without redevelopment.
+- AI systems cannot naturally map API data to UI context.</p>
+<hr />
+<h3 id="37-ai-crawlers-and-llm-readers">3.7 AI Crawlers and LLM Readers<a class="headerlink" href="#37-ai-crawlers-and-llm-readers" title="Permanent link">&para;</a></h3>
+<p>Modern AI browsers use advanced neural models to interpret pages. While powerful, they rely heavily on heuristics, inference, and pattern recognition.</p>
+<p><strong>Expanded Limitations:</strong>
+- High computational cost due to deep analysis.
+- Inconsistent interpretations across similar web structures.
+- Difficulty understanding intent or purpose behind UI components.
+- Ambiguity increases risk of hallucination.
+- Cannot guarantee stable results for mission-critical systems.</p>
+<p>These systems reinforce the need for explicit, structured, and inline semantic guidance—exactly what ARC provides.</p>
+<hr />
+<h3 id="38-summary-of-existing-methods">3.8 Summary of Existing Methods<a class="headerlink" href="#38-summary-of-existing-methods" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Approach</th>
+<th style="text-align: left;">Works For</th>
+<th style="text-align: left;">Strength</th>
+<th style="text-align: left;">Limitation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Semantic HTML</strong></td>
+<td style="text-align: left;">Accessible design, SEO</td>
+<td style="text-align: left;">Lightweight structure</td>
+<td style="text-align: left;">Not expressive</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Schema.org/JSON-LD</strong></td>
+<td style="text-align: left;">SEO, metadata</td>
+<td style="text-align: left;">Deep descriptors</td>
+<td style="text-align: left;">Detached from UI</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OpenGraph</strong></td>
+<td style="text-align: left;">Social preview</td>
+<td style="text-align: left;">Universal support</td>
+<td style="text-align: left;">Very shallow meaning</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Microdata/RDFa</strong></td>
+<td style="text-align: left;">Linked data</td>
+<td style="text-align: left;">Inline metadata</td>
+<td style="text-align: left;">Verbose, limited</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Headless APIs</strong></td>
+<td style="text-align: left;">Large platforms</td>
+<td style="text-align: left;">Machine-ready</td>
+<td style="text-align: left;">No UI connection</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>AI Crawlers</strong></td>
+<td style="text-align: left;">Any site</td>
+<td style="text-align: left;">Adaptive understanding</td>
+<td style="text-align: left;">High ambiguity</td>
+</tr>
+</tbody>
+</table>
+<p>ARC merges the strengths of inline semantics, structured metadata, and machine-friendly clarity into a unified system—eliminating fragmentation and enabling the next era of AI-readable web content.</p>
+<hr />
+<p><em>End of Phase 3 — Existing Options for AI Readability</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.expand", "navigation.sections", "navigation.instant", "navigation.indexes", "content.code.copy", "content.tabs.link", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
