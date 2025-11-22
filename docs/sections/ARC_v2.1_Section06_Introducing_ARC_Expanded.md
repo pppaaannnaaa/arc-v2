@@ -89,8 +89,8 @@ Nested structures communicate contextual meaning, helping AI systems construct a
 ```html
 <section data-ai-section="team">
   <div data-ai-group="member" data-ai-role="profile">
-    <h2 data-ai-heading="name">Panna Das</h2>
-    <p data-ai-summary="bio">React Developer and Creator of ARC.</p>
+    <h2 data-ai-heading="name">James Bond</h2>
+    <p data-ai-summary="bio">Agent of MI 6, lethal and dangerous.</p>
   </div>
 </section>
 ```
@@ -102,8 +102,8 @@ Nested structures communicate contextual meaning, helping AI systems construct a
   "group": {
     "member": {
       "role": "profile",
-      "name": "Panna Das",
-      "bio": "React Developer and Creator of ARC."
+      "name": "James Bond",
+      "bio": "Agent of MI 6, lethal and dangerous."
     }
   }
 }

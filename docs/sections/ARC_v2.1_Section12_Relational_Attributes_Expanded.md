@@ -29,8 +29,8 @@ This module clarifies relational models, provides deeper examples, and strengthe
 </article>
 
 <div data-ai-type="Author" data-ai-ref="author_profile">
-  <h3 data-ai-heading="name">Panna Das</h3>
-  <p data-ai-summary="bio">Software engineer exploring sustainable agriculture.</p>
+  <h3 data-ai-heading="name">James Bond</h3>
+  <p data-ai-summary="bio">Agent of MI 6, lethal and dangerous.</p>
 </div>
 ```
 
@@ -41,8 +41,8 @@ This module clarifies relational models, provides deeper examples, and strengthe
   "title": "AI in Agriculture",
   "intro": "How AI is transforming hydroponic farming.",
   "linked_author": {
-    "name": "Panna Das",
-    "bio": "Software engineer exploring sustainable agriculture."
+    "name": "James Bond",
+    "bio": "Agent of MI 6, lethal and dangerous."
   }
 }
 ```

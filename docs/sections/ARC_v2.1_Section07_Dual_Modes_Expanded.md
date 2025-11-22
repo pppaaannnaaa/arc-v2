@@ -25,8 +25,8 @@ AI systems use this mode for:
 ```html
 <section data-ai-section="team">
   <div data-ai-group="member">
-    <h2 data-ai-heading="name">Panna Das</h2>
-    <p data-ai-summary="bio">React Developer and Creator of ARC.</p>
+    <h2 data-ai-heading="name">James Bond</h2>
+    <p data-ai-summary="bio">Agent of MI 6, lethal and dangerous.</p>
   </div>
 </section>
 ```
@@ -37,8 +37,8 @@ AI systems use this mode for:
   "section": "team",
   "group": {
     "member": {
-      "name": "Panna Das",
-      "bio": "React Developer and Creator of ARC."
+      "name": "James Bond",
+      "bio": "Agent of MI 6, lethal and dangerous."
     }
   }
 }
